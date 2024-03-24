@@ -1,8 +1,0 @@
-{
-    "/api": {
-      "target": "https://fronttest.wabcgroup.com",
-      "secure": false,
-      "changeOrigin": true
-    }
-  }
-  

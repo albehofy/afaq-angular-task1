@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "afaq-angukar-task1": {
+    "afaq-angular-task1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/afaq-angukar-task1",
+            "outputPath": "dist/afaq-angular-task1",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "afaq-angukar-task1:build:production"
+              "buildTarget": "afaq-angular-task1:build:production"
             },
             "development": {
-              "buildTarget": "afaq-angukar-task1:build:development"
+              "buildTarget": "afaq-angular-task1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "afaq-angukar-task1:build"
+            "buildTarget": "afaq-angular-task1:build"
           }
         },
         "test": {
@@ -109,6 +109,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
